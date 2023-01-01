@@ -24,7 +24,7 @@ function CreatePost() {
 
   const onSubmit = (values) => {
     axios
-      .post("https://chatgpt-back.onrender.com/posts", values)
+      .post("chatgpt-front-production.up.railway.app/posts", values)
       .then((response) => {
         history("/");
       });

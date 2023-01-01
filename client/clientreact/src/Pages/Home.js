@@ -10,9 +10,11 @@ function Home() {
   let history = useNavigate();
 
   useEffect(() => {
-    axios.get("https://chatgpt-back.onrender.com/posts").then((response) => {
-      setListofPosts(response.data);
-    });
+    axios
+      .get("chatgpt-front-production.up.railway.app/posts")
+      .then((response) => {
+        setListofPosts(response.data);
+      });
   }, []);
   return (
     <div className="App">

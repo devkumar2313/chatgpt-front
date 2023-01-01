@@ -8,9 +8,11 @@ function Post() {
   let { id } = useParams();
   const [post, setPost] = useState({});
   useEffect(() => {
-    axios.get(`https://chatgpt-back.onrender.com/${id}`).then((response) => {
-      setPost(response.data);
-    }, []);
+    axios
+      .get(`chatgpt-front-production.up.railway.app/${id}`)
+      .then((response) => {
+        setPost(response.data);
+      }, []);
   });
 
   return (
