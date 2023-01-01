@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "chatgpt",
-    "password": "password",
-    "database": "Uimaterial",
-    "host": "localhost",
+    "username": "root",
+    "password": "CvusfL4JK208It2N8t3A",
+    "database": "railway",
+    "host": "containers-us-west-48.railway.app",
     "dialect": "mysql",
     "socketPath": "/Applications/MAMP/tmp/mysql/mysql.sock"
   },
