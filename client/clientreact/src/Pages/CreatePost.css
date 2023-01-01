@@ -1,0 +1,91 @@
+.createPostPage {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 20px auto;
+  background: linear-gradient(to bottom, #686ee2, #5c3e84, #f35c6e, #ffa87b);
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+#inputCreatePost {
+  font-family: "Source Code Pro", monospace;
+
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: 2px solid #2196f3;
+  color: #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  background-color: #ffffff00;
+  transition: all 0.2s ease-in-out;
+}
+#inputCreatePost:focus {
+  outline: none;
+  border: 1px solid #2196f3;
+  box-shadow: 0 0 5px #2196f3;
+}
+
+#inputCreatePost::selection {
+  background-color: #ffffff;
+  color: #2196f3;
+}
+
+#inputCreatePost:hover {
+  border: 1px solid #2196f3;
+}
+
+#inputCreatePost::placeholder {
+  color: #cccccc;
+}
+
+button[type="submit"] {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0bf0ed;
+  background-color: #2196f3;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #b6d5ef;
+}
+
+button[type="submit"]:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
+}
+.formContainer span {
+  color: red;
+  font-size: 12px;
+}

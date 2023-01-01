@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./Home.css";
 
 function Home() {
   const [listofPosts, setListofPosts] = useState([]);
@@ -24,8 +25,18 @@ function Home() {
             }}
           >
             <div className="title">{value.title}</div>
-            <div className="body">{value.postText}</div>
-            <div className="footer">{value.username}</div>
+            <div className="data">
+              <button className="copy-btn">copy</button>
+              {value.postText}
+            </div>
+            <div className="appjs">
+              <button className="copy-btn">copy</button>
+              {value.appjs}
+            </div>
+            <div className="indexjs">
+              <button className="copy-btn">copy</button>
+              {value.indexjs}
+            </div>
           </div>
         );
       })}

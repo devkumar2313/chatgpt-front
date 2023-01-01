@@ -1,3 +1,38 @@
 .App {
   text-align: center;
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(127, 5, 234);
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  /* border-bottom: 2px solid #00b8d4; */
+  font-family: "Roboto", sans-serif;
+  transition: background-color 0.3s ease-out;
+}
+
+.navbar a {
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: color 0.3s ease-out;
+}
+
+.navbar a:hover {
+  color: rgb(252, 137, 15);
+}
+.navbar:hover {
+  background-color: #444;
+}

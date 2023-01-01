@@ -1,0 +1,184 @@
+.clearfix::after {
+  content: "Code";
+  clear: both;
+  display: table;
+}
+body {
+  padding-top: 20px;
+  background: linear-gradient(to bottom, #686ee2, #5c3e84, #f35c6e, #ffa87b);
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
+  background-size: cover;
+  /* height: 100vh; */
+}
+
+.data,
+.appjs,
+.indexjs {
+  height: 150px;
+  overflow: auto;
+  background: linear-gradient(to bottom, #fbfbfb 0%, #edf2f2 100%);
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.post {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  clear: both;
+}
+
+.title {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5;
+  text-align: center;
+  color: rgb(237, 210, 12);
+  background-color: rgb(0, 0, 0);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.data {
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  white-space: pre-wrap;
+  background-color: #272822;
+  color: #fcf000;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(39, 40, 34, 0.75);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(39, 40, 34, 0.75);
+  box-shadow: 0px 0px 9px 0px rgba(39, 40, 34, 0.75);
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+.data:hover {
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(39, 40, 34, 0.75);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(39, 40, 34, 0.75);
+  box-shadow: 0px 0px 18px 0px rgba(39, 40, 34, 0.75);
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+.data::before {
+  content: "whole code";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  font-weight: bold;
+  color: #272822;
+  background-color: #f8f8f2;
+  padding: 0 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.appjs {
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  white-space: pre-wrap;
+  background-color: #272822;
+  color: #ffff06;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(39, 40, 34, 0.75);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(39, 40, 34, 0.75);
+  box-shadow: 0px 0px 9px 0px rgba(39, 40, 34, 0.75);
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+.appjs:hover {
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(39, 40, 34, 0.75);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(39, 40, 34, 0.75);
+  box-shadow: 0px 0px 18px 0px rgba(39, 40, 34, 0.75);
+  transform: scale(1.1);
+  font-weight: bold;
+}
+.appjs::before {
+  content: "App.js";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  font-weight: bold;
+  color: #272822;
+  background-color: #f8f8f2;
+  padding: 0 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.indexjs {
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  white-space: pre-wrap;
+  background-color: #272822;
+  color: #ddf107;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(39, 40, 34, 0.75);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(39, 40, 34, 0.75);
+  box-shadow: 0px 0px 9px 0px rgba(39, 40, 34, 0.75);
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+.indexjs:hover {
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(39, 40, 34, 0.75);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(39, 40, 34, 0.75);
+  box-shadow: 0px 0px 18px 0px rgba(39, 40, 34, 0.75);
+  transform: scale(1.1);
+  font-weight: bold;
+}
+.indexjs::before {
+  content: "index.js";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  font-weight: bold;
+  color: #272822;
+  background-color: #f8f8f2;
+  padding: 0 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.copy-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #0077c9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 5px 10px;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 119, 201, 0.75);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(0, 119, 201, 0.75);
+  box-shadow: 0px 0px 9px 0px rgba(0, 119, 201, 0.75);
+}
+
+.copy-btn:hover {
+  background-color: #0066b3;
+}

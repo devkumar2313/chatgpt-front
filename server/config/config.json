@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "sqluser",
+    "username": "chatgpt",
     "password": "password",
-    "database": "TrialDB",
+    "database": "Uimaterial",
     "host": "localhost",
     "dialect": "mysql"
   },
