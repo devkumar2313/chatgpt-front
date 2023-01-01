@@ -5,6 +5,7 @@
     "database": "railway",
     "host": "containers-us-west-48.railway.app",
     "dialect": "mysql",
+    "port": "5596",
     "socketPath": "/Applications/MAMP/tmp/mysql/mysql.sock"
   },
   "test": {
