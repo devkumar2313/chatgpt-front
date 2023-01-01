@@ -61,18 +61,6 @@ router.post("/", async (req, res) => {
     appjs: data.appjs,
     indexjs: data.indexjs,
   };
-  await fs.writeFileSync(
-    "c:/Users/devku/Desktop/Some projects/React tutorial/outputcode/posts.js",
-    data.postText
-  );
-  await fs.writeFileSync(
-    "c:/Users/devku/Desktop/Some projects/React tutorial/outputcode/app.js",
-    data.appjs
-  );
-  await fs.writeFileSync(
-    "c:/Users/devku/Desktop/Some projects/React tutorial/outputcode/backend.js",
-    data.indexjs
-  );
 
   await Posts.create(post);
   res.json(post);
