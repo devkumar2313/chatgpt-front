@@ -9,13 +9,6 @@ const env = process.env.NODE_ENV || "development";
 const config = require(__dirname + "/../config/config.json")[env];
 const db = {};
 
-const Sequelize = new Sequelize("Education", "root", "", {
-  host: "127.0.0.1",
-  dialect: "mysql",
-  dialectOptions: {
-    socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock",
-  },
-});
 let sequelize;
 if (config.use_env_variable) {
   sequelize = new Sequelize(process.env[config.use_env_variable], config);
