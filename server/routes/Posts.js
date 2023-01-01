@@ -12,8 +12,8 @@ const { json } = require("express");
 const { Configuration, OpenAIApi } = OpenAi;
 
 const configuration = new Configuration({
-  organization: "org-FXl4rbDAnncM1Zy8R4i1X8g6",
-  apiKey: "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",
+  organization: "org-NSaecRFEKQ0qi1fmdBlL3MmT",
+  apiKey: "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",
 });
 const openai = new OpenAIApi(configuration);
 router.get("/", async (req, res) => {
