@@ -1,7 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const { Posts } = require("../models");
-const fs = require("fs");
+const Organization = process.env.ORGANIZATION || "org-NSaecRFEKQ0qi1fmdBlL3MmT";
+
+const Api_key =
+  process.env.API_KEY || "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";
 
 let subject = { postText: "", appjs: "", indexjs: "" };
 let data = { postText: "", appjs: "", indexjs: "" };
@@ -12,8 +15,8 @@ const { json } = require("express");
 const { Configuration, OpenAIApi } = OpenAi;
 
 const configuration = new Configuration({
-  organization: "org-NSaecRFEKQ0qi1fmdBlL3MmT",
-  apiKey: "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",
+  organization: Organization,
+  apiKey: Api_key,
 });
 const openai = new OpenAIApi(configuration);
 router.get("/", async (req, res) => {
