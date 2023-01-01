@@ -5,21 +5,22 @@
     "database": "Uimaterial",
     "host": "localhost",
     "dialect": "mysql",
-    "port": "3030"
+    "Port": "3030"
   },
   "test": {
     "username": "root",
     "password": null,
     "database": "database_test",
-    "host": "10.0.2.2",
+    "host": "127.0.0.1",
     "dialect": "mysql",
-    "port": "3030"
+    "Port": "3030"
   },
   "production": {
     "username": "root",
     "password": null,
     "database": "database_production",
-    "host": "10.0.2.2",
-    "dialect": "mysql"
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "Port": "3030"
   }
 }
