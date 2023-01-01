@@ -10,7 +10,7 @@ function Home() {
   let history = useNavigate();
 
   useEffect(() => {
-    axios.get("http://localhost:1001/posts").then((response) => {
+    axios.get("https://chatgpt-back.onrender.com/posts").then((response) => {
       setListofPosts(response.data);
     });
   }, []);

@@ -23,9 +23,11 @@ function CreatePost() {
   let history = useNavigate();
 
   const onSubmit = (values) => {
-    axios.post("http://localhost:1001/posts", values).then((response) => {
-      history("/");
-    });
+    axios
+      .post("https://chatgpt-back.onrender.com/posts", values)
+      .then((response) => {
+        history("/");
+      });
   };
   return (
     <div className="createPostPage">

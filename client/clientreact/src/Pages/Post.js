@@ -8,7 +8,7 @@ function Post() {
   let { id } = useParams();
   const [post, setPost] = useState({});
   useEffect(() => {
-    axios.get(`http://localhost:1001/posts/${id}`).then((response) => {
+    axios.get(`https://chatgpt-back.onrender.com/${id}`).then((response) => {
       setPost(response.data);
     }, []);
   });
