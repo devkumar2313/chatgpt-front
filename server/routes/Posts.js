@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const { Posts } = require("../models");
 const Organization = process.env.ORGANIZATION || "org-NSaecRFEKQ0qi1fmdBlL3MmT";
+require("dotenv").config();
 
 const Api_key =
   process.env.API_KEY || "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";
