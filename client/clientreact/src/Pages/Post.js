@@ -9,7 +9,7 @@ function Post() {
   const [post, setPost] = useState({});
   useEffect(() => {
     axios
-      .get(`https://chatgpt-front-production.up.railway.app/${id}`)
+      .get(`http://chatgpt-front-production.up.railway.app/${id}`)
       .then((response) => {
         setPost(response.data);
       }, []);
