@@ -20,7 +20,7 @@ const configuration = new Configuration({
   apiKey: Api_key,
 });
 const openai = new OpenAIApi(configuration);
-router.get("/", async (req, res) => {
+router.get("/posts", async (req, res) => {
   const Allposts = await Posts.findAll();
   res.send(Allposts);
 });
@@ -30,7 +30,7 @@ router.get("/:id", async (req, res) => {
   res.json(Post);
 });
 
-router.post("/", async (req, res) => {
+router.post("/posts", async (req, res) => {
   subject.postText = req.body.postText;
   subject.appjs = req.body.appjs;
   subject.indexjs = req.body.indexjs;
