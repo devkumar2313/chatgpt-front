@@ -5,7 +5,7 @@ const Organization = process.env.ORGANIZATION || "org-NSaecRFEKQ0qi1fmdBlL3MmT";
 require("dotenv").config();
 
 const Api_key =
-  process.env.API_KEY || "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";
+  process.env.API_KEY || "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";
 
 let subject = { postText: "", appjs: "", indexjs: "" };
 let data = { postText: "", appjs: "", indexjs: "" };
