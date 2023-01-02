@@ -11,7 +11,7 @@ function Home() {
 
   useEffect(() => {
     axios
-      .get("http://chatgpt-front-production.up.railway.app/posts")
+      .get("https://chatgpt-front-production.up.railway.app/posts")
       .then((response) => {
         setListofPosts(response.data);
       });
